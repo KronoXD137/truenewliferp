@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - TC Accounts</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#0f1724; color:#e6eef8; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; }
+    .card { background:#0b1220; padding:28px; border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.7); width:320px; }
+    .card h1 { margin:0 0 16px 0; font-size:20px; color:#cfe6ff; }
+    label { display:block; margin:8px 0 4px; font-size:13px; color:#9fb7d9; }
+    input[type="text"], input[type="password"] { width:100%; padding:10px; border-radius:8px; border:none; background:#081023; color:#dbefff; outline: 1px solid rgba(255,255,255,0.04); }
+    button { width:100%; margin-top:14px; padding:10px; border-radius:8px; border:none; cursor:pointer; background:#2563eb; color:white; font-weight:600; }
+    .note { margin-top:12px; font-size:12px; color:#8ca6d6; }
+  </style>
+</head>
+<body>
+  <form class="card" action="login.php" method="post" autocomplete="off">
+    <h1>Entrar — TC Accounts</h1>
+    <label for="login">Usuário</label>
+    <input id="login" name="login" type="text" required maxlength="40" />
+
+    <label for="password">Senha</label>
+    <input id="password" name="password" type="password" required maxlength="128" />
+
+    <button type="submit">Entrar</button>
+
+    <div class="note">Use seu nome de login. Este formulário envia por POST para login.php.</div>
+  </form>
+</body>
+</html>
